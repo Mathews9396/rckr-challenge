@@ -1,5 +1,5 @@
 var distance = (lat1, lat2, lon1, lon2, name1, name2) => {
-    if(lon1==0 || lat2==0 || lon1==0 || lon2==0){
+    if(lat1==0 || lat2==0 || lon1==0 || lon2==0){
         console.log('value is empty');
     }
     lon1 = lon1 * Math.PI / 180;

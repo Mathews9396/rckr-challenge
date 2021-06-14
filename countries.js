@@ -1,8 +1,6 @@
 function distance(lat1, lat2, lon1, lon2) {
 
-    // The math module contains a function
-    // named toRadians which converts from
-    // degrees to radians.
+    // The math module contains a function named toRadians which converts from degrees to radians.
     lon1 = lon1 * Math.PI / 180;
     lon2 = lon2 * Math.PI / 180;
     lat1 = lat1 * Math.PI / 180;
@@ -18,8 +16,7 @@ function distance(lat1, lat2, lon1, lon2) {
 
     let c = 2 * Math.asin(Math.sqrt(a));
 
-    // Radius of earth in kilometers. Use 3956
-    // for miles
+    // Radius of earth in kilometers. Use 3956 for miles
     let r = 6371;
 
     // calculate the result
@@ -36,26 +33,6 @@ console.log(lat1, lat2, lon1, lon2);
 
 console.log(distance(lat1, lat2, lon1, lon2) + " K.M");
 
-
-// [ 'China', 1377422166 ]
-// [ 'India', 1295210000 ]
-// [ 'United States of America', 323947000 ]
-// [ 'Indonesia', 258705000 ]
-// [ 'Brazil', 206135893 ]
-// [ 'Pakistan', 194125062 ]
-// [ 'Nigeria', 186988000 ]
-// [ 'Bangladesh', 161006790 ]
-// [ 'Russian Federation', 146599183 ]
-// [ 'Japan', 126960000 ]
-
-    // console.log(sortedDataEntries);
-
-    // sortedDataEntries.sort(function (a, b) {
-    //     return b[1] - a[1];
-    // });
-
-// distance between  Bangladesh  and Brazil 15996.66
-// distance between  Bangladesh  and China 1894.15
-// distance between  Brazil  and China 16574.11
-
 //for 65110000 - Total distance :  1366408.24
+// for 2302 - Total distance : 1549379.25
+// 57100 - Total distance : 1569687.40
